@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Watermark from '@/components/Watermark'
 
 export const metadata: Metadata = {
   title: 'RentalMobil - Sewa Mobil Profesional',
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
         {children}
+        <Watermark />
       </body>
     </html>
   )
